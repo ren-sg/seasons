@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=seasons2
+POSTGRES_USER=JQSBDveHBFJMQDiYakUarlAsWcDTWFqj
+POSTGRES_PASSWORD=nZznPFBh01n6y8f0s3LaHyatMv1B9WO22peTf0AUaOEAYE6GdUugvGFXTImMyPoq
