@@ -42,9 +42,7 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
-DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres:///seasons")
-}
+DATABASES = {"default": env.db("DATABASE_URL", default="postgres:///seasons")}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 # URLS
@@ -148,6 +146,7 @@ STATICFILES_DIRS = [str(APPS_DIR.path("static"))]
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
 ]
 
 # MEDIA
