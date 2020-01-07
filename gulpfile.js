@@ -29,7 +29,7 @@ function pathsConfig(appName) {
   const vendorsRoot = 'node_modules'
 
   return {
-    
+    fontAwesome: `${vendorsRoot}/@fortawesome/fontawesome-free/scss`,
     bootstrapSass: `${vendorsRoot}/bootstrap/scss`,
     vendorsJs: [
       `${vendorsRoot}/jquery/dist/jquery.slim.js`,
@@ -69,6 +69,7 @@ function styles() {
       includePaths: [
         
         paths.bootstrapSass,
+        paths.fontAwesome,
         
         paths.sass
       ]
