@@ -1,0 +1,14 @@
+.header {
+    &-grid {
+        display: grid;
+        min-height: 70px;
+        grid-template-columns: 0.33fr 1fr;
+        align-items: center;
+    }
+    &-buttons {
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15px;
+    }
+}

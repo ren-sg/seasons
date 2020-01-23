@@ -28,20 +28,40 @@
   </head>
 
   <body>
-    <header class="mb-1 bg-light header">
+    <div class="mb-1 bg-light">
         <div class="container">
-            <div class="header-grid">
-                <a class="navbar-brand header-logo" href="{% url 'home' %}">LOGO</a>
-                <div class="header-buttons">
-                    <a href="/courses" class="header-buttons__courses">#Сезоны</a>
-                    <a href="/courses" class="header-buttons__notifications">Уведомления</a>
-                    <div class="header-dropdown" class="header-buttons__user">
-                        dropdown
-                    </div>
+            <div class="d-flex justify-end">
+            <a class="navbar-brand" href="{% url 'home' %}">LOGO</a>
+              <nav class="navbar navbar-expand-md navbar-light">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    {% if request.user.is_authenticated %}
+                      <li class="nav-item">
+                        {# URL provided by django-allauth/account/urls.py #}
+                        <a class="nav-link" href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
+                      </li>
+                      <li class="nav-item">
+                        {# URL provided by django-allauth/account/urls.py #}
+                        <a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
+                      </li>
+                    {% else %}
+                      <li class="nav-item">
+                        {# URL provided by django-allauth/account/urls.py #}
+                        <a id="sign-up-link" class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+                      </li>
+                      <li class="nav-item">
+                        {# URL provided by django-allauth/account/urls.py #}
+                        <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+                      </li>
+                    {% endif %}
+                  </ul>
                 </div>
+
+              </nav>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="container grid-container">
         <!-- Vertical navbar -->

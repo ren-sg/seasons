@@ -12900,6 +12900,20 @@ readers do not read off random characters that represent icons */
   display: grid;
   grid-template-columns: 17rem 1fr; }
 
+.header-grid {
+  display: grid;
+  min-height: 70px;
+  grid-template-columns: 0.33fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-buttons {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px; }
+
 .alert-debug {
   background-color: #fff;
   border-color: #d6e9c6;
