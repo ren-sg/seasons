@@ -1,147 +1,150 @@
 {% load static i18n %}<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% block title %}Seasons{% endblock title %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% block title %}Seasons{% endblock title %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
-    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+  <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
 
     {% block css %}
-    
-
-    <!-- Your stuff: Third-party CSS libraries go here -->
-    <!-- This file stores project-specific CSS -->
-    
-    <link href="{% static 'css/project.css' %}" rel="stylesheet">
-    
+      <!-- Your stuff: Third-party CSS libraries go here -->
+      <!-- This file stores project-specific CSS -->
+      <link href="{% static 'css/project.css' %}" rel="stylesheet">
     {% endblock %}
 
-  </head>
+</head>
 
-  <body>
-    <header class="mb-1 bg-light header">
-        <div class="container">
-            <div class="header-grid">
-                <a class="navbar-brand header-logo" href="{% url 'home' %}">LOGO</a>
-                <div class="header-buttons">
-                    <a href="/courses" class="header-buttons__courses">#Сезоны</a>
-                    <a href="/courses" class="header-buttons__notifications">Уведомления</a>
-                    <div class="header-dropdown" class="header-buttons__user">
-                        dropdown
-                    </div>
-                </div>
-            </div>
+<body>
+<header class="mb-1 bg-light header">
+  <div class="container">
+    <div class="header-grid">
+      <a class="navbar-brand header-logo" href="{% url 'home' %}">
+        ГЕНЕРАТОР СТАРТАПОВ
+        "БИЗНЕС БЕЗ КОМПЛЕКСОВ"
+      </a>
+      <div class="header-buttons">
+        <a href="/courses" class="header-buttons__courses">#Сезоны</a>
+        <a href="/courses" class="header-buttons__notifications">Уведомления</a>
+        <div class="header-dropdown" class="header-buttons__user">
+          dropdown
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <div class="container grid-container">
-        <!-- Vertical navbar -->
-        <div class="vertical-nav bg-white" id="sidebar">
-          <div class="py-4 px-3 mb-4 bg-light">
-              <div class="media d-flex align-items-center"><img src="{% static 'images/learning.jpg' %}" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
-              <div class="media-body">
-                  <h4 class="m-0"><a href="#">Сезон #29</a></h4>
-                <p class="font-weight-light text-muted mb-0">короткое описание</p>
-              </div>
-            </div>
-          </div>
-
-          <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
-
-          <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a href="/courses" class="nav-link text-dark font-italic bg-light">
-                        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                        Список курсов
-                </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-                        About
-                    </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-                        Services
-                    </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-                        Gallery
-                    </a>
-            </li>
-          </ul>
-
-          <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
-
-          <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-                        Area charts
-                    </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-                        Bar charts
-                    </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-                        Pie charts
-                    </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark font-italic">
-                        <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-                        Line charts
-                    </a>
-            </li>
-          </ul>
+<div class="container grid-container">
+  <!-- Vertical navbar -->
+  <div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center"><img src="{% static 'images/learning.jpg' %}" alt="..." width="65"
+                                                        class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0"><a href="#">Сезон #29</a></h4>
+          <p class="font-weight-light text-muted mb-0">короткое описание</p>
         </div>
-<!-- End vertical navbar -->
-
-    <!-- Page content holder -->
-    <div class="page-content p-5" id="content">
-          {% if messages %}
-              {% for message in messages %}
-                  <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">{{ message }}<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-              {% endfor %}
-          {% endif %}
-
-          {% block content %}
-            <p>Use this document as a way to quick start any new project.</p>
-          {% endblock content %}
+      </div>
     </div>
 
-    </div> <!-- /container -->
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
-    {% block modal %}{% endblock modal %}
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a href="/courses" class="nav-link text-dark font-italic bg-light">
+          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+          Список курсов
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+          Services
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+          Gallery
+        </a>
+      </li>
+    </ul>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    {% block javascript %}
-      <!-- Vendor dependencies bundled as one file-->
-      <script src="{% static 'js/vendors.js' %}"></script>
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
 
-      <!-- place project specific Javascript in this file -->
-      <script src="{% static 'js/project.js' %}"></script>
-    {% endblock javascript %}
-  </body>
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+          Area charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+          Bar charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+          Pie charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+          Line charts
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+
+  <!-- Page content holder -->
+  <div class="page-content p-5" id="content">
+      {% if messages %}
+          {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">{{ message }}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          {% endfor %}
+      {% endif %}
+
+      {% block content %}
+        <p>Use this document as a way to quick start any new project.</p>
+      {% endblock content %}
+  </div>
+
+</div> <!-- /container -->
+
+{% block modal %}{% endblock modal %}
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{% block javascript %}
+  <!-- Vendor dependencies bundled as one file-->
+  <script src="{% static 'js/vendors.js' %}"></script>
+
+  <!-- place project specific Javascript in this file -->
+  <script src="{% static 'js/project.js' %}"></script>
+{% endblock javascript %}
+</body>
 </html>
- 
+
