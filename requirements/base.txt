@@ -25,4 +25,5 @@ coreapi==2.3.3  # https://github.com/core-api/python-client
 
 # Channels
 channels
-django-channels
+channels_redis
+#asgi_redis
