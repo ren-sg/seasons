@@ -15,6 +15,7 @@ urlpatterns = [
     # User management
     path("users/", include("seasons.users.urls", namespace="users")),
     path("courses/", include("seasons.courses.urls", namespace="courses")),
+    path('chat/', include('chat.urls')),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
