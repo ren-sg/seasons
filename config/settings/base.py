@@ -78,7 +78,8 @@ LOCAL_APPS = [
     "seasons.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "seasons.courses.apps.CoursesConfig",
-    "chat",
+    "seasons.chat.apps.ChatConfig",
+    # "chat",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
